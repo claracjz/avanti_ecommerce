@@ -1,0 +1,12 @@
+.color-primary {
+   color: #005CFF;
+}
+
+.color-secondary {
+    color: #000000;
+}
+
+.btn {
+    border: none;
+    font-size: 20px;
+}
