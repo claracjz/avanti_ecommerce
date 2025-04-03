@@ -1,12 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.promotion-bar {
+    background-color: #005CFF;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
 .color-primary {
-   color: #005CFF;
+    color: #005CFF
 }
 
 .color-secondary {
-    color: #000000;
+    background-color: #8b18af;
 }
 
-.btn {
-    border: none;
-    font-size: 20px;
+.search-input-container {
+    width: 500px;
+    position: relative; 
+}
+
+.search-input-container input::placeholder {
+    color: #000000 !important;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    pointer-events: none;
+}
+
+.me-auto {
+    margin-left: 30px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.dropdown-container {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
