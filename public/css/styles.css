@@ -48,12 +48,51 @@ body {
     border-radius: 10px;
 }
 
-.dropdown-container {
+.dropdown-menu {
+    width: 1200px;
+}
+  
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.bg-banner {
     position: absolute;
-    top: calc(100% + 5px);
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
-    z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background-image: url('../assets/background-banner.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner-text-primary {
+    font-size: 70px;
+}
+
+.banner-text-secondary {
+    font-size: 25px;
 }

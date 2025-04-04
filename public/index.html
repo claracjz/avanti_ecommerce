@@ -1,86 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AVANTI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="promotion-bar d-flex justify-content-center py-1">
-        <p class="my-auto">Ganhe <span class="color-secondary">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10</p>
+      <p class="my-auto">
+        Ganhe <span class="color-secondary">R$10,00</span> de desconto no seu
+        primeiro pedido. Utilize o cupom DESCONTO10
+      </p>
     </div>
     <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
-                <div class="container">
-                  <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.png" alt="logo avanti">
-                  </a>
-                  <form class="d-flex me-auto">
-                    <div class="search-input-container">
-                        <input class="form-control" type="search" placeholder="Digite aqui o que você procura">
-                        <i class="bi bi-search search-icon"></i>
-                    </div>
-                  </form>
-                  <div class="d-flex align-items-center">
-                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark me-3">
-                            <i class="bi bi-person fs-4 text-primary color-primary me-2"></i>
-                            <span>
-                                Olá,
-                                Nome Cliente
-                            </span>
-                        </a>
-                        <a href="#" class="text-dark">
-                            <i class="bi bi-cart2 fs-4"></i>
-                        </a>
-                  </div>
-                </div> 
-            </nav> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.png" alt="logo avanti" />
+          </a>
+          <form class="d-flex me-auto">
+            <div class="search-input-container">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Digite aqui o que você procura"
+              />
+              <i class="bi bi-search search-icon"></i>
+            </div>
+          </form>
+          <div class="d-flex align-items-center ms-2">
+            <a
+              href="#"
+              class="d-flex align-items-center text-decoration-none text-dark"
+            >
+              <i class="bi bi-person fs-4 text-primary color-primary"></i>
+              <span> Olá, Nome Cliente </span>
+            </a>
+            <a href="#" class="text-dark">
+              <i class="bi bi-cart2 fs-4 ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
 
-                <div class="container mt-3 p-0">
-                    <div class="dropdown">
-                        <button class="btn" type="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-list"></i> Todas as Categorias
-                        </button>
-                      <div class="dropdown-menu p-3 w-100">
-                            <div class="row">
-                                <div class="col-md-4">
-
-                                    <p class="menu-title fw-bold">Departamentos</p>
-                                    <a class="dropdown-item" href="#">Departamento</a>
-                                    <a class="dropdown-item" href="#">Departamento</a>
-                                    <a class="dropdown-item" href="#">Departamento</a>
-                                    <a class="dropdown-item" href="#">Departamento</a>
-                                </div>
-                                <div class="col-md-4 fw-bold">
-                                    <p class="menu-title">Categoria</p>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                </div>
-                                <div class="col-md-4 fw-bold">
-                                    <p class="menu-title">Categoria</p>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                    <a class="dropdown-item" href="#">Categoria</a>
-                                </div>
-                            </div>
-                        </div>   
-                        
-                        
-                    </div> 
+      <div class="container p-0">
+        <div class="d-flex align-items-center justify-content-center w-100 mt-3">
+          <div class="dropdown flex-shrink-0">
+            <button class="btn d-flex align-items-center p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown">
+              <i class="bi bi-list fs-5 mx-2"></i> <span class="fw-bold">Todas as Categorias</span>
+            </button>
+            <div class="dropdown-menu p-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="menu-title fw-bold">Departamentos</p>
+                  <a class="dropdown-item" href="#">Departamento</a>
+                  <a class="dropdown-item" href="#">Departamento</a>
+                  <a class="dropdown-item" href="#">Departamento</a>
+                  <a class="dropdown-item" href="#">Departamento</a>
                 </div>
-              
+                <div class="col-md-4 fw-bold">
+                  <p class="menu-title">Categoria</p>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                </div>
+                <div class="col-md-4 fw-bold">
+                  <p class="menu-title">Categoria</p>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                  <a class="dropdown-item" href="#">Categoria</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-grow-1 text-nowrap justify-content-evenly">
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Departamento</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <section class="banner position-relative w-100 mt-3">
+         <div class="bg-banner"></div>
+
+         <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/banner-img.png" alt="banner imagem" class="img-fluid">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h1 class="banner-text-primary"><span class="fw-bold">SUPER</span>SALE</h1>
+                    <p class="banner-text-secondary text-uppercase text-primary">Itens selecionados com até</p>
+                    <h2 class="text-primary fw-bold">50% OFF</h2>
+                </div>
+            </div>
+         </div>
+      </section>
     </header>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
