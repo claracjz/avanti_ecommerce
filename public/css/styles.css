@@ -147,4 +147,9 @@ body {
   .carousel-indicators .active {
     opacity: 1;
 }
+
+.produto {
+    background-image: url("../assets/fundo-caneca.png");
+    height: 600px;
+}
   
