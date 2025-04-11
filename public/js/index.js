@@ -12,7 +12,11 @@ const produtos = [
 ];
 
 const produtosPorSlide = 5;
-const carouselInner = document.querySelector('.carousel-inner');
+
+const containers = [
+    document.querySelector('#carousel-inner'),
+    document.querySelector('#carousel-inner-2')
+  ];
 
 for (let i = 0; i < produtos.length; i += produtosPorSlide) {
     const grupo = produtos.slice(i, i + produtosPorSlide);
@@ -58,5 +62,8 @@ for (let i = 0; i < produtos.length; i += produtosPorSlide) {
     });
 
     slide.appendChild(row);
-    carouselInner.appendChild(slide);
+    
+    containers.forEach(container => {
+        container.appendChild(slide.cloneNode(true));
+    });
 }
