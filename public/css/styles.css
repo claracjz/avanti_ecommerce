@@ -152,4 +152,31 @@ body {
     background-image: url("../assets/fundo-caneca.png");
     height: 600px;
 }
+
+.banner-avanti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/banner-avanti.png");  
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+.texto-banner {
+    background-color: #005CFF;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.newsletter-box {
+    background-color: #DEDEDE;
+    border-radius: 8px;
+}
   
