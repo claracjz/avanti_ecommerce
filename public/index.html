@@ -33,16 +33,22 @@
           <a class="navbar-brand" href="#">
             <img src="./assets/logo.png" alt="logo avanti" />
           </a>
-          <form class="d-flex me-auto">
+          <form class="d-flex me-auto" onsubmit="handleSearch(event)">
             <div class="search-input-container">
               <input
+                id="searchInput"
                 class="form-control"
                 type="search"
                 placeholder="Digite aqui o que você procura"
               />
-              <i class="bi bi-search search-icon"></i>
+              <button type="submit" id="searchButton" class="search-icon">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
           </form>
+
+          <p id="searchResult"></p>
+
           <div class="d-flex align-items-center ms-2">
             <a
               href="#"

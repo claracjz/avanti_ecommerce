@@ -11,6 +11,22 @@ const produtos = [
     {nome: "Lorem ipsum dolor sit amet consectetuer adipiscing elit", precoOriginal: "100,00", precoAtual: "79,90", imagem: "./assets/product.png"},
 ];
 
+const searchInput = document.getElementById('searchInput');
+const searchResult = document.getElementById('searchResult');
+
+function handleSearch(event) {
+    event.preventDefault();
+    const query = searchInput.value.trim();
+
+    if (query !== "") {
+        searchResult.textContent = `Você buscou por: '${query}'`;
+    } else {
+        searchResult.textContent = "";
+    }
+    }
+
+
+
 const produtosPorSlide = 5;
 
 const containers = [
@@ -67,3 +83,4 @@ for (let i = 0; i < produtos.length; i += produtosPorSlide) {
         container.appendChild(slide.cloneNode(true));
     });
 }
+
