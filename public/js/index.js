@@ -23,9 +23,12 @@ function handleSearch(event) {
     } else {
         searchResult.textContent = "";
     }
-    }
+}
 
-
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('show');
+  }
 
 const produtosPorSlide = 5;
 

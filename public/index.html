@@ -28,12 +28,28 @@
       </p>
     </div>
     <header>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
-        <div class="container">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+
+          <button class="d-lg-none btn p-0 me-2" onclick="toggleMobileMenu()">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+      
+      
+          <div id="mobileMenu" class="mobile-menu d-lg-none">
+            <a href="#">Departamento</a>
+            <a href="#">Departamento</a>
+            <a href="#">Departamento</a>
+            <a href="#">Departamento</a>
+            <a href="#">Departamento</a>
+          </div>
+
+
           <a class="navbar-brand" href="#">
             <img src="./assets/logo.png" alt="logo avanti" />
           </a>
-          <form class="d-flex me-auto" onsubmit="handleSearch(event)">
+          <form class="d-flex me-0 ms-0" onsubmit="handleSearch(event)">
             <div class="search-input-container">
               <input
                 id="searchInput"
@@ -49,23 +65,20 @@
 
           <p id="searchResult"></p>
 
-          <div class="d-flex align-items-center ms-2">
-            <a
-              href="#"
-              class="d-flex align-items-center text-decoration-none text-dark"
-            >
+          <div class="d-flex align-items-center ms-auto">
+            <a href="#" class="text-dark d-none d-lg-flex align-items-center text-decoration-none me-2">
               <i class="bi bi-person fs-4 text-primary color-primary"></i>
               <span> Olá, Nome Cliente </span>
             </a>
-            <a href="#" class="text-dark">
-              <i class="bi bi-cart2 fs-4 ms-2"></i>
+            <a href="#" class="text-dark d-none d-lg-flex">
+              <i class="bi bi-cart2 fs-4"></i>
             </a>
           </div>
         </div>
-      </nav>
+       </nav>
 
       <div class="container p-0">
-        <div class="d-flex align-items-center justify-content-center w-100 mt-3">
+        <div class="d-flex align-items-center justify-content-center w-100 mt-3 d-none d-lg-flex">
           <div class="dropdown flex-shrink-0">
             <button class="btn d-flex align-items-center p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown">
               <i class="bi bi-list fs-5 mx-2"></i> <span class="fw-bold">Todas as Categorias</span>
@@ -96,7 +109,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-grow-1 text-nowrap justify-content-evenly">
+          <div class="d-flex flex-grow-1 text-nowrap justify-content-evenly" data-bs-toggle="dropdown">
             <a href="#" class="text-decoration-none text-dark"
               >Departamento</a
             >
@@ -126,23 +139,26 @@
       </div>
     </header>  
 
-      <section class="banner position-relative w-100 mt-3">
-         <div class="bg-banner"></div>
-
-         <div class="container position-relative">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="./assets/banner-img.png" alt="banner imagem" class="img-fluid">
-                </div>
-
-                <div class="col-md-6 text-center">
-                    <h1 class="banner-text-primary"><span class="fw-bold">SUPER</span>SALE</h1>
-                    <p class="banner-text-secondary text-uppercase text-primary">Itens selecionados com até</p>
-                    <h2 class="text-primary fw-bold">50% OFF</h2>
-                </div>
-            </div>
-         </div>
-      </section> 
+    <section class="banner position-relative w-100 mt-3">
+      <div class="bg-banner"></div>
+    
+      <div class="container position-relative">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <img src="./assets/banner-img.png" alt="banner imagem" class="img-fluid w-75 w-md-100 mx-auto">
+          </div>
+    
+          <div class="col-12 col-md-6">
+            <h1 class="banner-text-primary">
+              <span class="fw-bold">SUPER</span>SALE
+            </h1>
+            <p class="banner-text-secondary text-uppercase text-primary">Itens selecionados com até</p>
+            <h2 class="text-primary fw-bold">50% OFF</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
     <div class="container mt-5">
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
